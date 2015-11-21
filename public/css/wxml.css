@@ -90,7 +90,7 @@ form{
 	margin-top: -87px;
 	z-index: 2;
 }
-.form label{
+.form .label{
 	position: relative;
 	z-index: 2;
 	display: block;
@@ -103,6 +103,8 @@ form{
 	width: 22%;
 }
 .formline{
+	position: relative;
+	z-index: 1;
 	margin: 4px 0;
 	display: inline-block;
 	float: left;
@@ -128,7 +130,9 @@ form{
 	width: 70%;
 }
 .formline select{
-	width: 80%;
+	position: relative;
+	z-index: 2;
+	width: 100%;
 	appearance:none;
 	-webkit-appearance:none;
 	-moz-appearance:none;
@@ -140,6 +144,12 @@ form{
 	float: left;
 	text-align: center;
 	background-color: #fff;
+}
+.formline select+i{
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
 }
 .formline i.nobg{
 	background-color: transparent;
@@ -208,9 +218,8 @@ form{
 	background-color: #fff;
 }
 .result .stamp .stampblock canvas{
-	width: 100%;
-	height: 100%;
-	background-color: #ccc;
+	width: 218px;
+	height: 106px;
 }
 .rules{
 	position: absolute;
@@ -262,4 +271,33 @@ form{
 	-moz-transform:rotate(-10deg);
 	-o-transform:rotate(-10deg);
 	transform:rotate(-10deg);
+}
+@media screen and (min-width : 360px){
+	.result .stamp{
+		width: 258px;
+		height: 130px;
+	}
+	.result .stamp .stampblock{
+		width: 250px;
+		height: 122px;
+	}
+	.result .stamp .stampblock canvas{
+		width: 250px;
+		height: 122px;
+	}
+	.gamble{
+		bottom: 15%;
+	}
+	.rules{
+		bottom: 24%;
+	}
+	.award{
+		margin: -120px 0 0 -100px;
+		width: 200px;
+    	height: 180px;
+	}
+	.award .code{
+		margin-top: 58px;
+		font-size: 28px;
+	}
 }

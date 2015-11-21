@@ -6,40 +6,59 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
 	<link rel="stylesheet" type="text/css" href="./css/wxml.css">
-	<script type="text/javascript" src="./js/jq.js"></script>
+	<script type="text/javascript" src="./js/zp.js"></script>
 	<script type="text/javascript" src="./js/wxml.js"></script>
 </head>
 <body>
-	<div class="page_apply hide">
+	<div class="page_apply ">
 		<div class="upframe"></div>
 		<div class="downframe"></div>
 		<form class="form">
-			<label>
+			<div class="label">
 				<span class="formlabel">
 					<i class="icon-phone"></i>
 				</span>
 				<div class="formline">
-					<input type="tel" placeholder="请输入您的手机号码" />
+					<input type="tel" id="cell" placeholder="请输入您的手机号码" />
 					<i class="icon-close nobg"></i>
 				</div>
-			</label>
+			</div>
 			<div class="line"></div>
-			<label>
+			<div class="label">
 				<span class="formlabel">
 					<i class="icon-map"></i>
 				</span>
-				<div class="formline">
-					<select placeholder="城市">
-
+				<label class="formline" for="province_select" selectInput>
+					<select id="province_select">
+						<option value="" >上海</option>
+						<option value="" >上海</option>
+						<option value="" >上海</option>
+						<option value="" >上海</option>
+						<option value="" >上海</option>
+						<option value="" >上海</option>
+						<option value="" >上海</option>
+						<option value="" >上海</option>
+						<option value="" >上海</option>
+						<option value="" >上海</option>
 					</select>
 					<i class="icon-arrow"></i>
-				</div>
-				<div class="formline">
-					<select placeholder="区域">
+				</label>
+				<label class="formline" for="city_select" selectInput>
+					<select id="city_select">
+						<option value="" >宝山区</option>
+						<option value="" >宝山区</option>
+						<option value="" >宝山区</option>
+						<option value="" >宝山区</option>
+						<option value="" >宝山区</option>
+						<option value="" >宝山区</option>
+						<option value="" >宝山区</option>
+						<option value="" >宝山区</option>
+						<option value="" >宝山区</option>
+						<option value="" >宝山区</option>
 					</select>
 					<i class="icon-arrow"></i>
-				</div>
-			</label>
+				</label>
+			</div>
 			<a class="gamble"></a>
 		</form>
 	</div>
@@ -62,14 +81,13 @@
 			<p>5.XXXXXXX</p>
 		</div>
 	</div>
-	<div class="page_award ">
+	<div class="page_award hide">
 		<div class="upframe">
 		</div>
 		<div class="downframesp">
 		</div>
 		<div class="award">
-			<div class="code">
-				135141
+			<div class="code">123123
 			</div>
 		</div>
 	</div>
